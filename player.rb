@@ -9,5 +9,6 @@ class Player
 
 end
 
-p = Player.new("David", 4)
-puts p.name
+p = Player.new("David")
+p.lives = 5
+puts p.lives
