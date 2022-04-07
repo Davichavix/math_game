@@ -8,5 +8,9 @@ class Question
     @result = result
   end
 
+  def question_ask
+    puts "What does #{numOne} plus #{numTwo)} equal?"
+  end
+  
 
 end
