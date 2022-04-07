@@ -1,11 +1,13 @@
+require_relative ("random_range")
+
 class Question
 
   attr_accessor :numOne, :numTwo, :result
 
   def initialize(numOne, numTwo, result)
-    @numOne = numOne
-    @numTwo = numTwo
-    @result = result
+    @numOne = randomRange
+    @numTwo = randomRange
+    @result = @numOne + @numTwo
   end
 
   def question_ask
@@ -15,5 +17,3 @@ class Question
 
 end
 
-question2 = Question.new(3,4,7)
-question2.question_ask

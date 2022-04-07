@@ -4,7 +4,7 @@ require_relative ("question")
 
 class Game
 
-  attr_accessor :player1, :player2
+  attr_accessor :player1, :player2, :question
 
  def initialize(player1, player2, question)
     @player1 = player1
@@ -17,7 +17,7 @@ class Game
     num1 = randomRange
     player1.lives -= 1
     player2.lives -= 1
-    puts question1.result
+    puts @question.question_ask
     puts player1.lives
     puts player2.lives
   end

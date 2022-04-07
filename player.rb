@@ -9,5 +9,3 @@ class Player
 
 
 end
-
-p = Player.new("David")
